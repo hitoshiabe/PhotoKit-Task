@@ -32,7 +32,7 @@ extension PHImageManager {
     public func requestImageData(with requestID: inout PHImageRequestID, for asset: PHAsset, options: PHImageRequestOptions?) -> Task<(Data, String?, UIImageOrientation, [AnyHashable : Any]?)> {
         let taskSource = TaskCompletionSource<(Data, String?, UIImageOrientation, [AnyHashable : Any]?)>()
         
-        requestID = requestImageData(for: asset, options: options, resultHandler: { (imageData, dataUTI, orientation, info) in
+        requestID = requestImageData(for: asset, options: options) { (imageData, dataUTI, orientation, info) in
             if let info = info, let isCancelled = info[PHImageCancelledKey] as? Bool, isCancelled == true {
                 taskSource.cancel()
                 return
@@ -42,7 +42,7 @@ extension PHImageManager {
                 return
             }
             taskSource.set(error: PHImageManager_TaskError.noData)
-        })
+        }
         
         return taskSource.task
     }
