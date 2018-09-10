@@ -1,0 +1,9 @@
+# Carthage
+Carthage/*
+
+# Mac
+.DS_Store
+
+# Xcode
+PhotoKit+Task.xcodeproj/xcuserdata/*.xcuserdatad/
+PhotoKit+Task.xcworkspace/
