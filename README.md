@@ -1,4 +1,6 @@
-# PhotoKit+Task
+# PhotoKit-Task
+
+Extend PhotoKit with Bolts-Swift
 
 ## Getting Started
   
@@ -6,6 +8,6 @@
 
  Add the following line to your Cartfile:
  ```
- github "hitoshiabe/PhotoKit+Task"
+ github "hitoshiabe/PhotoKit-Task"
  ```
  Run `carthage update`, and you should now have the latest version of Bolts in your Carthage folder.
