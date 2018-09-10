@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5270F148214666CD009D2A8F /* BoltsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5270F147214666CD009D2A8F /* BoltsSwift.framework */; };
+		5270F14B21466771009D2A8F /* PHImageManager+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F14A21466771009D2A8F /* PHImageManager+Task.swift */; };
 		527BC918214664FF00A96C6C /* PhotoKit_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527BC90E214664FE00A96C6C /* PhotoKit_Task.framework */; };
 		527BC91D214664FF00A96C6C /* PhotoKit_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527BC91C214664FF00A96C6C /* PhotoKit_TaskTests.swift */; };
 		527BC91F214664FF00A96C6C /* PhotoKit_Task.h in Headers */ = {isa = PBXBuildFile; fileRef = 527BC911214664FE00A96C6C /* PhotoKit_Task.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		5270F147214666CD009D2A8F /* BoltsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BoltsSwift.framework; path = Carthage/Build/iOS/BoltsSwift.framework; sourceTree = "<group>"; };
+		5270F14A21466771009D2A8F /* PHImageManager+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHImageManager+Task.swift"; sourceTree = "<group>"; };
 		527BC90E214664FE00A96C6C /* PhotoKit_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoKit_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527BC911214664FE00A96C6C /* PhotoKit_Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoKit_Task.h; sourceTree = "<group>"; };
 		527BC912214664FE00A96C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				527BC911214664FE00A96C6C /* PhotoKit_Task.h */,
 				527BC912214664FE00A96C6C /* Info.plist */,
+				5270F14A21466771009D2A8F /* PHImageManager+Task.swift */,
 			);
 			path = "PhotoKit+Task";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					527BC90D214664FE00A96C6C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					527BC916214664FF00A96C6C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -224,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5270F14B21466771009D2A8F /* PHImageManager+Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +374,7 @@
 		527BC923214664FF00A96C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hitoshiabe.PhotoKit-Task";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,6 +404,7 @@
 		527BC924214664FF00A96C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -425,6 +433,7 @@
 		527BC926214664FF00A96C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PhotoKit+TaskTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,6 +451,7 @@
 		527BC927214664FF00A96C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PhotoKit+TaskTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
