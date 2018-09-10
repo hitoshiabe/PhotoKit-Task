@@ -7,3 +7,4 @@ Carthage/*
 # Xcode
 PhotoKit+Task.xcodeproj/xcuserdata/*.xcuserdatad/
 PhotoKit+Task.xcworkspace/
+UserInterfaceState.xcuserstate
